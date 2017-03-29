@@ -27,3 +27,4 @@ RUN pip3 install --no-cache-dir -r requirements_all.txt && \
 COPY . .
 
 CMD [ "python", "-m", "homeassistant", "--config", "/config" ]
+CMD [ "python", "/usr/src/app/configurator.py"]
